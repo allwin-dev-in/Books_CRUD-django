@@ -1,0 +1,27 @@
+#Api Call for list all data
+###
+GET http://127.0.0.1:8000/books/
+Accept: application/json
+
+#Api Call To insert record
+###
+POST http://127.0.0.1:8000/books/
+Content-Type: application/json
+
+{
+    "title":"Book01",
+    "auther":"Auther01",
+    "price":150,
+    "pages":50,
+    "publication":"publication01"
+}
+
+#Api call for retriving books with id=1
+###
+GET http://127.0.0.1:8000/books/1/
+Accept: application/json
+
+#Api call for deleteing id =2
+###
+DELETE http://127.0.0.1:8000/books/1/
+
